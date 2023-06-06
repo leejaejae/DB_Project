@@ -1,21 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/type"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/type"
+    android:background="#748BC34A"
+    android:orientation="vertical"
     tools:context=".type">
 
     <Button
         android:id="@+id/tohome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#748BC34A"
+        android:fontFamily="@font/ef_diary"
         android:text="돌아가기"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ef_diary"
+            android:hint="예) 프링글스 뚜껑"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="50dp" />
+
+        <Button
+            android:id="@+id/search_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#748BC34A"
+            android:fontFamily="@font/ef_diary"
+            android:text="검색"/>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/listView_main_list"
+        android:layout_width="match_parent"
+        android:layout_height="346dp"
+        android:layout_margin="5dp"
+        android:text="ex"
+        android:layout_weight="6" />
+
+    <Button
+        android:id="@+id/tomap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:layout_gravity="center"
+        android:background="#748BC34A"
+        android:fontFamily="@font/ef_diary"
+        android:text="지도보기"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
+
+

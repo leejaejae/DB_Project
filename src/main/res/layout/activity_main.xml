@@ -5,7 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#748BC34A"
+
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/type"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/ef_diary"
+            android:text="안녕하세요!"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ef_diary"
+            android:textStyle="bold"
+            android:text="text"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/type"
@@ -15,9 +49,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="200dp"
         android:layout_marginEnd="16dp"
-
         android:background="@null"
-        android:scaleType="centerInside"
+        android:scaleType="fitCenter"
         android:src="@drawable/typetype"
         app:layout_constraintBottom_toTopOf="@+id/map"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +66,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="50dp"
-
         android:background="@null"
         android:src="@drawable/map"
         app:layout_constraintBottom_toBottomOf="parent"
